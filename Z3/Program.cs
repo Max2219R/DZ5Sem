@@ -5,7 +5,7 @@
 
 Console.WriteLine("Введите размер массива  ");
 int size = Convert.ToInt32(Console.ReadLine());
-double[] numbers = new double[size];
+double[] numbers = new double[size]; 
 FillArrayRandomNumbers(numbers);
 Console.WriteLine("массив: ");
 PrintArray(numbers);
@@ -36,11 +36,9 @@ void FillArrayRandomNumbers(double[] numbers)
 }
 void PrintArray(double[] numbers)
 {
-    Console.Write("[ ");
     for(int i = 0; i < numbers.Length; i++)
         {
             Console.Write(numbers[i] + " ");
         }
-    Console.Write("]");
     Console.WriteLine();
 }
